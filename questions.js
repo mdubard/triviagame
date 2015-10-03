@@ -2,7 +2,7 @@ var questionTracker = 2;
 var score = 0;
 var questionsRight = 0;
 var quizData = {
-"What do you need at the end of every line?":
+"What year was Wellesley founded?":
       [";", 
        "2", 
        "3", 
