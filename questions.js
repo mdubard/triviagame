@@ -1,5 +1,6 @@
 var questionTracker = 2;
 var score = 0;
+var questionsRight = 0;
 var quizData = {
 "What do you need at the end of every line?":
       [";", 
@@ -34,14 +35,21 @@ var points = [5, 5, 10, 10];
 
 function wrongAnswer(){
 	alert("Wrong Answer");
-	nextQuestion();
+	if(questionTracker<4)
+		nextQuestion();
+	else
+		results();
 }
 
 function rightAnswer(){
 	alert("Right Answer");
 	score += points[questionTracker-2];
 	document.getElementById("points").innerHTML = score;
-	nextQuestion();
+	questionsRight++;
+	if(questionTracker<4)
+		nextQuestion();
+	else
+		results();
 }
 
 function nextQuestion(){
@@ -98,5 +106,10 @@ function shuffle(array) {
   }
 
   return array;
+}
+
+function results(){
+	window.location = '/Users/marydubard/triviagame/results.html';
+	
 }
 
