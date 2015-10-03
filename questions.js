@@ -38,7 +38,7 @@ function wrongAnswer(){
 	if(questionTracker<=4)
 		nextQuestion();
 	else
-		window.location = '/Users/marydubard/triviagame/results.html';
+		results();
 }
 
 function rightAnswer(){
@@ -46,11 +46,10 @@ function rightAnswer(){
 	score += points[questionTracker-2];
 	document.getElementById("points").innerHTML = score;
 	questionsRight++;
-	alert(questionsRight);
 	if(questionTracker<=4)
 		nextQuestion();
 	else
-		window.location = '/Users/marydubard/triviagame/results.html';
+		results();
 }
 
 function nextQuestion(){
@@ -110,6 +109,18 @@ function shuffle(array) {
 }
 
 function results(){
-	document.getElementById("overall").innerHTML = "You got " + questionsRight + " questions right!";
+	document.getElementById("questionHead").innerHTML = "Results:";
+	if(questionsRight == 1)
+		document.getElementById("question").innerHTML = "You got " + questionsRight + " question right!";
+	else
+		document.getElementById("question").innerHTML = "You got " + questionsRight + " questions right!";
+	var child1 = document.getElementById("a1");
+	var child2 = document.getElementById("a2");
+	var child3 = document.getElementById("a3");
+	var child4 = document.getElementById("a4");
+	child1.parentNode.removeChild(child1);
+	child2.parentNode.removeChild(child2);
+	child3.parentNode.removeChild(child3);
+	child4.parentNode.removeChild(child4);
 }
 
