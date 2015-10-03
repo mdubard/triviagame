@@ -35,10 +35,10 @@ var points = [5, 5, 10, 10];
 
 function wrongAnswer(){
 	alert("Wrong Answer");
-	if(questionTracker<4)
+	if(questionTracker<=4)
 		nextQuestion();
 	else
-		results();
+		window.location = '/Users/marydubard/triviagame/results.html';
 }
 
 function rightAnswer(){
@@ -46,10 +46,11 @@ function rightAnswer(){
 	score += points[questionTracker-2];
 	document.getElementById("points").innerHTML = score;
 	questionsRight++;
-	if(questionTracker<4)
+	alert(questionsRight);
+	if(questionTracker<=4)
 		nextQuestion();
 	else
-		results();
+		window.location = '/Users/marydubard/triviagame/results.html';
 }
 
 function nextQuestion(){
@@ -109,7 +110,6 @@ function shuffle(array) {
 }
 
 function results(){
-	window.location = '/Users/marydubard/triviagame/results.html';
-	
+	document.getElementById("overall").innerHTML = "You got " + questionsRight + " questions right!";
 }
 

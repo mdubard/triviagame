@@ -35,7 +35,7 @@
 
 </head>
 
-<body id="page-top" class="index">
+<body id="page-top" class="index" onload="results()">
 
     <!-- Navigation -->
     <nav class="navbar navbar-default navbar-fixed-top">
@@ -85,14 +85,7 @@
             <div class="intro-text" style = "margin-top: -200px;">
                 <p class="intro-heading" id="questionHead" style = "z-index: 0;">RESULTS</p>
                 <p id="test"></p>
-                <div id="overall" class="intro-lead-in">You go</div>
-                <button style="background-color:black" id = "a1" class="intro-lead-in" onclick="rightAnswer()"> ; </button>
-                <br>
-                <button style="background-color:black" id = "a2" class="intro-lead-in" onclick="wrongAnswer()"> ! </button>
-                <br>
-                <button style="background-color:black" id = "a3" class="intro-lead-in" onclick="wrongAnswer()"> . </button>
-                <br>
-                <button style="background-color:black" id = "a4" class="intro-lead-in" onclick="wrongAnswer()"> // </button>
+                <div id="overall" class="intro-lead-in"></div>
                 <div class="intro-lead-in"> Score: </div>
                 <p class="intro-lead-in" id="points"> 0 </p>
             </div>
