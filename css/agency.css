@@ -42,7 +42,7 @@ a:hover,
 a:focus,
 a:active,
 a.active {
-    color: #05C0FF;
+    color: #13BBF2;
 }
 
 h1,
@@ -74,7 +74,7 @@ h6 {
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 700;
     color: #fff;
-    background-color: #13BBF2;
+    background-color: #00ADE6;
 }
 
 .btn-primary:hover,
@@ -82,9 +82,9 @@ h6 {
 .btn-primary:active,
 .btn-primary.active,
 .open .dropdown-toggle.btn-primary {
-    border-color: #f6bf01;
+    border-color: #36D9FE;
     color: #fff;
-    background-color: #05C0FF;
+    background-color: #00ADE6;
 }
 
 .btn-primary:active,
@@ -134,9 +134,9 @@ fieldset[disabled] .btn-primary.active {
 .btn-xl:active,
 .btn-xl.active,
 .open .dropdown-toggle.btn-xl {
-    border-color: #f6bf01;
+    border-color: #36D9FE;
     color: #fff;
-    background-color: #008DC4;
+    background-color: #00A3D9;
 }
 
 .btn-xl:active,
@@ -176,14 +176,14 @@ fieldset[disabled] .btn-xl.active {
 
 .navbar-default .navbar-brand {
     font-family: "Kaushan Script","Helvetica Neue",Helvetica,Arial,cursive;
-    color: #13BBF2;
+    color: #2BCBFF;
 }
 
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus,
 .navbar-default .navbar-brand:active,
 .navbar-default .navbar-brand.active {
-    color: #008DC4;
+    color: #2BCBFF;
 }
 
 .navbar-default .navbar-collapse {
@@ -201,7 +201,7 @@ fieldset[disabled] .btn-xl.active {
 
 .navbar-default .navbar-toggle:hover,
 .navbar-default .navbar-toggle:focus {
-    background-color: #13BBF2;
+    background-color: #2BCBFF;
 }
 
 .navbar-default .nav li a {
@@ -215,7 +215,7 @@ fieldset[disabled] .btn-xl.active {
 .navbar-default .nav li a:hover,
 .navbar-default .nav li a:focus {
     outline: 0;
-    color: #13BBF2;
+    color: #2BCBFF;
 }
 
 .navbar-default .navbar-nav>.active>a {
@@ -227,7 +227,7 @@ fieldset[disabled] .btn-xl.active {
 .navbar-default .navbar-nav>.active>a:hover,
 .navbar-default .navbar-nav>.active>a:focus {
     color: #fff;
-    background-color: #fec503;
+    background-color: #13BBF2;
 }
 
 @media(min-width:768px) {
@@ -298,8 +298,8 @@ header .intro-text .intro-heading {
 
 @media(min-width:768px) {
     header .intro-text {
-        padding-top: 100px;
-        padding-bottom: 40px;
+        padding-top: 300px;
+        padding-bottom: 200px;
     }
 
     header .intro-text .intro-lead-in {
