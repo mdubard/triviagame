@@ -49,9 +49,37 @@ document.getElementById("questionHead").innerHTML = "Question " + questionTracke
 var arr = Object.keys(quizData);
 var answers = quizData[arr[questionTracker-1]];
 document.getElementById("question").innerHTML = arr[questionTracker-1];
-document.getElementById("a").innerHTML = answers[0];
-document.getElementById("b").innerHTML = answers[1];
-document.getElementById("c").innerHTML = answers[2];
-document.getElementById("d").innerHTML = answers[3];
+
+document.getElementById("a1").innerHTML = answers[0];
+document.getElementById("a2").innerHTML = answers[1];
+document.getElementById("a3").innerHTML = answers[2];
+document.getElementById("a4").innerHTML = answers[3];
+
+if(correctAnswers[arr[questionTracker-1]] === answers[0]){
+	document.getElementById("a1").onclick = rightAnswer;
+	}
+else{
+	document.getElementById("a1").onclick = wrongAnswer;
+}
+	
+
+if(correctAnswers[arr[questionTracker-1]] === answers[1])
+	document.getElementById("a2").onclick = rightAnswer;
+else
+	document.getElementById("a2").onclick = wrongAnswer;
+	
+
+if(correctAnswers[arr[questionTracker-1]] === answers[2])
+	document.getElementById("a3").onclick = rightAnswer;
+else
+	document.getElementById("a3").onclick = wrongAnswer;
+	
+
+if(correctAnswers[arr[questionTracker-1]] === answers[3])
+	document.getElementById("a4").onclick = rightAnswer;
+else
+	document.getElementById("a4").onclick = wrongAnswer;
+	
 questionTracker++;
 }
+
