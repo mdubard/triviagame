@@ -48,6 +48,7 @@ function nextQuestion(){
 document.getElementById("questionHead").innerHTML = "Question " + questionTracker;
 var arr = Object.keys(quizData);
 var answers = quizData[arr[questionTracker-1]];
+answers = shuffle(answers);
 document.getElementById("question").innerHTML = arr[questionTracker-1];
 
 document.getElementById("a1").innerHTML = answers[0];
@@ -62,24 +63,40 @@ else{
 	document.getElementById("a1").onclick = wrongAnswer;
 }
 	
-
 if(correctAnswers[arr[questionTracker-1]] === answers[1])
 	document.getElementById("a2").onclick = rightAnswer;
 else
-	document.getElementById("a2").onclick = wrongAnswer;
-	
+	document.getElementById("a2").onclick = wrongAnswer;	
 
 if(correctAnswers[arr[questionTracker-1]] === answers[2])
 	document.getElementById("a3").onclick = rightAnswer;
 else
 	document.getElementById("a3").onclick = wrongAnswer;
 	
-
 if(correctAnswers[arr[questionTracker-1]] === answers[3])
 	document.getElementById("a4").onclick = rightAnswer;
 else
 	document.getElementById("a4").onclick = wrongAnswer;
 	
 questionTracker++;
+}
+
+function shuffle(array) {
+  var currentIndex = array.length, temporaryValue, randomIndex ;
+
+  // While there remain elements to shuffle...
+  while (0 !== currentIndex) {
+
+    // Pick a remaining element...
+    randomIndex = Math.floor(Math.random() * currentIndex);
+    currentIndex -= 1;
+
+    // And swap it with the current element.
+    temporaryValue = array[currentIndex];
+    array[currentIndex] = array[randomIndex];
+    array[randomIndex] = temporaryValue;
+  }
+
+  return array;
 }
 
