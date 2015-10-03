@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<script src="questions.js"></script>
+
 <head>
 
     <meta charset="utf-8">
@@ -9,7 +11,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Academic Trivia</title>
+    <title>Question 1</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -83,11 +85,13 @@
             <div class="intro-text">
                 <div class="intro-heading">Question 1</div>
                 <div class="intro-lead-in">What is required at the end of every line in Java?</div>
-                <div class="intro-lead-in">;</div>
-                <div class="intro-lead-in">!</div>
-                <div class="intro-lead-in">.</div>
-                <div class="intro-lead-in">//</div>
-
+                <button style="background-color:black" id = "right" class="intro-lead-in" onclick="rightAnswer()"> ; </button>
+                <br>
+                <button style="background-color:black" id = "wrong" class="intro-lead-in" onclick="wrongAnswer()"> ! </button>
+                <br>
+                <button style="background-color:black" id = "wrong" class="intro-lead-in" onclick="wrongAnswer()"> . </button>
+                <br>
+                <button style="background-color:black" id = "wrong" class="intro-lead-in" onclick="wrongAnswer()"> // </button>
             </div>
         </div>
     </header>
