@@ -34,21 +34,21 @@ var quizData = {
        "red oak",
        "yellow birch",
        "pine tree"],
-"Hold":  
-      ["a",
-       "b",
-       "c",
-       "d"],
-"Hold2":  
-      ["a",
-       "b",
-       "c",
-       "d"],
-"Hold3":  
-      ["a",
-       "b",
-       "c",
-       "d"],
+"A ghost haunts the elevator of which hall:":  
+      ["Tower",
+       "Munger",
+       "Pomeroy",
+       "Haunted Mansion"],
+"How many majors does Wellesley offer?":  
+      ["56",
+       "23",
+       "61",
+       "83"],
+"Which of these is not a tradition at Wellesley?":  
+      ["Apple Cider Day",
+       "Lake Day",
+       "Tree Planting",
+       "Hoop Rolling"],
 "Which of these is not part of the Wellesley 50?":
       ["Buy candy in El Table to eat during class.",
        "Be the subject of a psychology experiment.",
@@ -63,8 +63,8 @@ var correctAnswers = {
 "What class of Wellesley students first planted a class tree?": "1879",
 "What is Wellesley's motto?": "Non Ministrari sed Ministrare",
 "What is the most common class tree species?": "red oak",
-"Hold": "a",
-"Hold2": "a",
+"A ghost haunts the elevator of which hall:": "Tower",
+"How many majors does Wellesley offer?": "56",
 "Hold3": "a",
 "Which of these is not part of the Wellesley 50?": "Sled down Severance Green face first."
 };
