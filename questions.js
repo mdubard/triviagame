@@ -65,7 +65,7 @@ var correctAnswers = {
 "What is the most common class tree species?": "red oak",
 "A ghost haunts the elevator of which hall:": "Tower",
 "How many majors does Wellesley offer?": "56",
-"Hold3": "a",
+"Which of these is not a tradition at Wellesley?": "Apple Cider Day",
 "Which of these is not part of the Wellesley 50?": "Sled down Severance Green face first."
 };
 
