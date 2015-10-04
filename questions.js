@@ -111,12 +111,24 @@ function shuffle(array) {
 }
 
 function results(){
-	$(".fbbutton").css("display", "block");
+	$('.newButton').append('<div class="fb-share-button" data-href="http://www.samanthavoigt.com" data-layout="button_count"></div>');
+	FB.XFBML.parse(document.getElementById('newButton'));
 	document.getElementById("questionHead").innerHTML = "Results:";
 	if(questionsRight == 1)
 		document.getElementById("question").innerHTML = "You got " + questionsRight + " question right!";
 	else
 		document.getElementById("question").innerHTML = "You got " + questionsRight + " questions right!";
+		
+	if(questionsRight < 10)
+		document.getElementById("rank").innerHTML = "Are you sure you don't attend Harvard?";
+	else if (questionsRight < 50)
+		document.getElementById("rank").innerHTML = "Maybe you visited once...";
+	else if (questionsRight < 80)
+		document.getElementById("rank").innerHTML = "Welcome to Wellesley, first year!";
+	else if(questionsRight < 100)
+		document.getElementById("rank").innerHTML = "You are truly a Wendy Wellesley!";
+		
+			
 	var child1 = document.getElementById("a1");
 	var child2 = document.getElementById("a2");
 	var child3 = document.getElementById("a3");
