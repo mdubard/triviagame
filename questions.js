@@ -147,13 +147,10 @@ function shuffle(array) {
 }
 
 function results(){
-	$('.newButton').append('<div class="fb-share-button" data-href="http://www.samanthavoigt.com" data-layout="button_count"></div>');
-	FB.XFBML.parse(document.getElementById('newButton'));
+	$(".fbbutton").css("display", "block");
 	document.getElementById("questionHead").innerHTML = "Results:";
-	if(questionsRight == 1)
-		document.getElementById("question").innerHTML = "You got " + questionsRight + " question right!";
-	else
-		document.getElementById("question").innerHTML = "You got " + questionsRight + " questions right!";
+	
+	document.getElementById("question").innerHTML = "You got " + questionsRight + " out of 10 questions right!";
 		
 	if(questionsRight <= 1)
 		document.getElementById("rank").innerHTML = "Are you sure you don't attend Harvard?";
