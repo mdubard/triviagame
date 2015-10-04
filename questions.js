@@ -122,5 +122,7 @@ function results(){
 	child2.parentNode.removeChild(child2);
 	child3.parentNode.removeChild(child3);
 	child4.parentNode.removeChild(child4);
+	//var x = document.getElementById("fbbutton");
+	//x.className="fb-share-button";
 }
 
