@@ -4,11 +4,11 @@ var questionTracker = 2;
 var score = 0;
 var questionsRight = 0;
 var quizData = {
-"What year was Wellesley founded?":
-      [";", 
-       "2", 
-       "3", 
-       "4"],
+"Which isn't one of the most popular majors?":
+      ["Computer Science", 
+       "Economics", 
+       "Political Science", 
+       "Biology"],
 "What is an array?":
       ["1",
        "array",
