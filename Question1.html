@@ -5,6 +5,14 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script src="questions.js"></script>
 <head>
+	
+	<meta property="og:url"           content="http://mdubard.github.io/triviagame/Question1.html" />
+    <meta property="og:type"          content="website" />
+    <meta property="og:title"         content="How Well Do You Know Wellesley?" />
+    <meta property="og:description"   content="Your description" />
+    <meta property="og:image"         content="http://wellesleydentalgroup.com/blog/wp-content/uploads/2013/01/Wellesley-College-from-wellesley4msia-on-wordpress.jpg" />
+	
+
 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -38,6 +46,7 @@
     <![endif]-->
 
 </head>
+
 
 <body id="page-top" class="index">
         <!-- Load Facebook SDK for JavaScript -->
@@ -112,9 +121,9 @@
                 <button style="background-color:black; font-size: 18px;padding: 10px 30px;" id = "a4" class="intro-lead-in btn btn-xl" onclick="wrongAnswer()">//</button>
                 <div class="intro-lead-in"> Score: <div class="intro-lead-in" id="points" style = "display: inline;"> 0 </div> </div>
                     <!-- Your share button code -->
-    			<div class="newButton" id="newButton"> 
-    			</div>
- 
+                    <div class="fbbutton">
+    			<div class="fb-share-button" data-href="http://mdubard.github.io/triviagame/" data-layout="button_count"></div>
+ 				</div>
             </div>
         </div>
     </header>

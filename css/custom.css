@@ -5,3 +5,7 @@ header {
 .navbar-default .nav li a {
 	color: #000;
 }
+
+.fbbutton {
+	display: none;
+}

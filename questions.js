@@ -111,8 +111,7 @@ function shuffle(array) {
 }
 
 function results(){
-	$('.newButton').append('<div class="fb-share-button" data-href="http://www.samanthavoigt.com" data-layout="button_count"></div>');
-	FB.XFBML.parse(document.getElementById('newButton'));
+	$(".fbbutton").css("display", "block");
 	document.getElementById("questionHead").innerHTML = "Results:";
 	if(questionsRight == 1)
 		document.getElementById("question").innerHTML = "You got " + questionsRight + " question right!";
