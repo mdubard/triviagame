@@ -119,13 +119,13 @@ function results(){
 	else
 		document.getElementById("question").innerHTML = "You got " + questionsRight + " questions right!";
 		
-	if(questionsRight < 10)
+	if(questionsRight <= 1)
 		document.getElementById("rank").innerHTML = "Are you sure you don't attend Harvard?";
-	else if (questionsRight < 50)
+	else if (questionsRight <= 5)
 		document.getElementById("rank").innerHTML = "Maybe you visited once...";
-	else if (questionsRight < 80)
+	else if (questionsRight <= 8)
 		document.getElementById("rank").innerHTML = "Welcome to Wellesley, first year!";
-	else if(questionsRight < 100)
+	else if(questionsRight <= 10)
 		document.getElementById("rank").innerHTML = "You are truly a Wendy Wellesley!";
 		
 			
