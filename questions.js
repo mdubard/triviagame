@@ -9,35 +9,71 @@ var quizData = {
        "Economics", 
        "Political Science", 
        "Biology"],
-"What is an array?":
-      ["1",
-       "array",
-       "3",
-       "4"],
-"2+2=?":
+"How much money does Wellesley spend to replace dishes every year?":
+      ["$50,000",
+       "$2,500",
+       "$25,000",
+       "$60,000"],
+"Who founded Wellesley?":
+      ["Henry and Pauline Durant",
+       "Horatio Hollis Hunnewell",
+       "Ada Howard",
+       "Wendy Wellesley"],
+"What class of Wellesley students first planted a class tree?":
+      ["1905",
+       "1910",
+       "1890",
+       "1879"],
+"What is Wellesley's motto?":
+      ["Non Ministrari sed Ministrare",
+       "Veritas",
+       "Eruditio et Religio",
+       "Non Slytherins sed Gryffindors"],
+"What is the most common class tree species?":  
+      ["white oak",
+       "red oak",
+       "yellow birch",
+       "pine tree"],
+"Hold":  
       ["a",
        "b",
-       "4",
-       "c"],
-"How do you dance?":  
-      ["1",
-       "dance",
-       "3",
-       "4"]
+       "c",
+       "d"],
+"Hold2":  
+      ["a",
+       "b",
+       "c",
+       "d"],
+"Hold3":  
+      ["a",
+       "b",
+       "c",
+       "d"],
+"Which of these is not part of the Wellesley 50?":
+      ["Buy candy in El Table to eat during class.",
+       "Be the subject of a psychology experiment.",
+       "Join an organization.",
+       "Sled down Severance Green face first."]
 };
 
 var correctAnswers = {
-"What do you need at the end of every line?": ";",
-"What is an array?": "array",
-"2+2=?": "4",
-"How do you dance?": "dance"
+"Which isn't one of the top five majors at Wellesley?": "Computer Science",
+"How much money does Wellesley spend to replace dishes every year?": "$50,000",
+"Who founded Wellesley?": "Henry and Pauline Durant",
+"What class of Wellesley students first planted a class tree?": "1879",
+"What is Wellesley's motto?": "Non Ministrari sed Ministrare",
+"What is the most common class tree species?": "red oak",
+"Hold": "a",
+"Hold2": "a",
+"Hold3": "a",
+"Which of these is not part of the Wellesley 50?": "Sled down Severance Green face first."
 };
 
 var points = 10;
 
 function wrongAnswer(){
 	alert("Wrong Answer");
-	if(questionTracker<=4)
+	if(questionTracker<=10)
 		nextQuestion();
 	else
 		results();
@@ -48,7 +84,7 @@ function rightAnswer(){
 	score += points;
 	document.getElementById("points").innerHTML = score;
 	questionsRight++;
-	if(questionTracker<=4)
+	if(questionTracker<=10)
 		nextQuestion();
 	else
 		results();
@@ -124,7 +160,7 @@ function results(){
 	else if (questionsRight <= 5)
 		document.getElementById("rank").innerHTML = "Maybe you visited once...";
 	else if (questionsRight <= 8)
-		document.getElementById("rank").innerHTML = "Welcome to Wellesley, first year!";
+		document.getElementById("rank").innerHTML = "Welcome to Wellesley, first year.";
 	else if(questionsRight <= 10)
 		document.getElementById("rank").innerHTML = "You are truly a Wendy Wellesley!";
 		
