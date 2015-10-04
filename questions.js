@@ -1,3 +1,5 @@
+
+
 var questionTracker = 2;
 var score = 0;
 var questionsRight = 0;
@@ -31,7 +33,7 @@ var correctAnswers = {
 "How do you dance?": "dance"
 };
 
-var points = [5, 5, 10, 10];
+var points = 10;
 
 function wrongAnswer(){
 	alert("Wrong Answer");
@@ -43,7 +45,7 @@ function wrongAnswer(){
 
 function rightAnswer(){
 	alert("Right Answer");
-	score += points[questionTracker-2];
+	score += points;
 	document.getElementById("points").innerHTML = score;
 	questionsRight++;
 	if(questionTracker<=4)
@@ -109,6 +111,8 @@ function shuffle(array) {
 }
 
 function results(){
+	$('.newButton').append('<div class="fb-share-button" data-href="http://www.samanthavoigt.com" data-layout="button_count"></div>');
+	FB.XFBML.parse(document.getElementById('newButton'));
 	document.getElementById("questionHead").innerHTML = "Results:";
 	if(questionsRight == 1)
 		document.getElementById("question").innerHTML = "You got " + questionsRight + " question right!";
@@ -122,7 +126,7 @@ function results(){
 	child2.parentNode.removeChild(child2);
 	child3.parentNode.removeChild(child3);
 	child4.parentNode.removeChild(child4);
-	//var x = document.getElementById("fbbutton");
-	//x.className="fb-share-button";
 }
+
+
 
