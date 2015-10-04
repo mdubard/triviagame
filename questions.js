@@ -4,7 +4,7 @@ var questionTracker = 2;
 var score = 0;
 var questionsRight = 0;
 var quizData = {
-"Which isn't one of the top 5 majors at Wellesley?":
+"Which isn't one of the top five majors at Wellesley?":
       ["Computer Science", 
        "Economics", 
        "Political Science", 
