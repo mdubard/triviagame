@@ -1,4 +1,7 @@
-header .btn { 
-	background-color: #13BBF2;
-	border-color: #36D9FE;
+header {
+	color: #000;
+}
+
+.navbar-default .nav li a {
+	color: #000;
 }
